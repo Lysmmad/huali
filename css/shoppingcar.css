@@ -1,0 +1,281 @@
+.shopcar{
+	width: 990px;
+	margin: 0px auto;
+	font-size: 14px;
+}
+.shopcar>div{
+	border: 1px solid #ccc;
+}
+.shopcarhd{
+	background-color: #ebebeb;
+}
+.shopcarhd ul{
+	width: 950px;
+	margin: 0px auto;
+	overflow: hidden;
+	text-align: center;
+}
+.shopcarhd ul:first-child{
+	border-top: none;
+}
+.shopcarhd ul{
+	border-top: 1px solid #d9d9d9;
+}
+.shopcarhd li{
+	width: 120px;
+	line-height: 40px;
+	float: left;
+}
+.shopcarhd .select{
+	width: 36px;
+	height: 40px;
+}
+.shopcarhd li:nth-child(2){
+	text-align: left;
+	width: 432px;
+}
+.shopcarse{
+	background-color: #fff;
+}
+.shopcarse .select{
+	cursor: pointer;
+	height: 88px;
+	background-image: url('../images/ico_unchecked.png');
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: 9px 26px;
+}
+.shopcarse .select img{
+	width: 20px;
+}
+.shopcarse li{
+	text-align: center;
+	height: 88px;
+	line-height: 88px;
+	margin: 20px 0px;
+}
+.shopcarse li:nth-child(3){
+	text-decoration: line-through;
+	color: #999999;
+}
+.shopcarse li a{
+	display: inline-block;
+	margin-left: 10px;
+	width: 324px;
+	font-size: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: top; 
+}
+.shopcarse li a:hover{
+	text-decoration: underline;
+}
+.shopcarse li p{
+	line-height: 20px;
+	font-size: 12px;
+	color: #737373;
+	cursor: pointer;
+	text-align: left;
+	padding-left: 36px;
+}
+.shopcarse .shopdelete{
+	margin-top:22px; 
+}
+.shopcarse li p:hover{
+	color: #ff6a00;
+	text-decoration: underline;
+}
+.shopcarse i{
+	cursor: pointer;
+	border: 1px solid #d9d9d9;
+	width: 9px;
+	height: 9px;
+	display: inline-block;
+	background: url('../images/common_z.png') no-repeat;
+}
+.shopcarse .down{
+	background-position: -274px -234px;
+}
+.shopcarse .add{
+	background-position: -396px -239px;
+}
+.shopcarse span{
+	font-size: 12px;
+	padding: 2px 20px 2px 5px;
+	border: 1px solid #d9d9d9;
+	margin: 0px 5px;
+}
+
+.shopcar .buydecide{
+	margin-top: 10px;
+	border-right:none;
+}
+.buydecide a{
+	line-height: 52px;
+}
+.buydecide a:hover{
+	color: #fe6600;
+	text-decoration: underline;
+}
+.buydecide a::before{
+	content: '';
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url('../images/common_z.png') no-repeat;
+	background-position: -67px -317px;
+	position: relative;
+	top: 7px;
+	margin: 0px 5px 0px 20px;
+}
+.buydecide div{
+	line-height: 52px;
+	float: right;
+}
+.buydecide div span{
+	font-size: 12px;
+	color: #737373
+}
+.buydecide div b{
+	color: #ff6a00;
+	margin-right: 20px;
+}
+.buydecide div input{
+	width: 120px;
+	font-size: 18px;
+	color: #fff;
+	background-color: #ff6a00;
+	outline: none;
+	border: 1px solid #ff6a00;
+	padding: 13px;
+	cursor: pointer;
+}
+
+.shopcar .buyrecomment{
+	border: none;
+	margin-top: 20px;
+}
+.shopcar .othercomment{
+	width: 160px;
+	margin-right: 10px;
+	color: #ff6a00;
+	font-weight: bold;
+	border-bottom: 1px solid #fff;
+	cursor: pointer;
+}
+.shopcar .chocolate{
+	color: #737373;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+.buyrecchoose ul{
+	overflow: hidden;
+}
+.buyrecchoose ul li{
+	float: left;
+	padding: 10px 20px;
+	font-size: 14px;
+	border: 1px solid #ccc
+}
+.addbuyshop{
+	border: 1px solid #ccc;
+	position: relative;
+	top: -1px;
+	z-index: -1;
+	
+}
+.addbuyshop>div{
+	width: 910px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+.addbuyshop::before{
+	content: '';
+	display: inline-block;
+	width: 33px;
+	height: 33px;
+	background: url('../images/common_z.png') no-repeat;
+	background-position: -344px -45px;
+	position: absolute;
+	top: 126px;
+	left: 10px;
+}
+.addbuyshop::after{
+	content: '';
+	display: inline-block;
+	width: 33px;
+	height: 33px;
+	background: url('../images/common_z.png') no-repeat;
+	background-position: -301px -45px;
+	position: absolute;
+	top: 126px;
+	right: 0px;
+}
+.addbuyshop ul{
+	width: 1505px;
+	overflow: hidden;
+	text-align: center;
+}
+.addbuyshop ul li{
+	float: left;
+	padding: 15px;
+}
+.addbuyshop a img{
+	width: 150px;
+	height: 163px;
+}
+.addbuyshop a p{
+	width: 150px;
+	overflow: hidden;
+	line-height: 20px;
+	height: 40px;
+}
+
+.shopbuyabout{
+	width: 990px;
+}
+.shopbuyabout .aboutUs ul{
+	border: 1px solid #fff;
+	overflow: hidden;
+	width: 930px;
+	margin: 0px auto;
+}
+.aboutUs ul li{
+	margin: 50px 0px 20px 0px;
+	width: 232px;
+	float: left;
+}
+.aboutUs li a h3{
+	margin-top: 12px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.aboutUsnow li span{
+	float: left;
+	display: inline-block;
+	margin: 10px;
+	width: 40px;
+	height: 40px;
+	background: url('../images/common_z.png');
+}
+.aboutUsnow li:nth-child(1) span{
+	background-position: -104px -185px; 
+}
+.aboutUsnow li:nth-child(2) span{
+	background-position: -243px -50px; 
+}
+.aboutUsnow li:nth-child(3) span{
+	background-position: -243px -2px; 
+}
+.aboutUsnow li:nth-child(4) span{
+	background-position: -249px -99px; 
+}
+
+section hr{
+	border: none;
+	height: 2px;
+	background-color: #eeeeee;
+	position: relative;
+	top: -7px;
+}
