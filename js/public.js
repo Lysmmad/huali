@@ -20,11 +20,16 @@ $(function(){
 			n++;
 			}else{
 			n=0;
-			// $(".bannerbgul li").eq(n).animate({'opacity':'1'}, 1000).siblings('').animate({'opacity':'0'}, 1000);		
-		}
+			}
 		},2000)
 	}
 	
+
+	$(".banner").hover(function() {
+		clearInterval(timer);
+	}, function() {
+		bannergo();
+	});
 	$(".bannerbg span").hover(function() {
 		$(this).css('color', 'white');
 	}, function() {
@@ -55,7 +60,6 @@ $(function(){
 		}
 	});
 	$(".bannerbgpot li").hover(function() {
-		clearInterval(timer);
 		n = $(this).index();
 		$(".bannerbgul li").stop().eq(n).animate({'opacity':'1'}, 1000).siblings('').animate({'opacity':'0'}, 800);
 		$(".bannerbgpot li").stop().eq(n).css('background-color', '#ff6600').siblings('').css('background-color', '');
@@ -76,6 +80,8 @@ $(function(){
 	}, function() {
 		$(this).children('').hide();
 	});
+
+
 	// 返回顶部
 	$(".sidgotop").hide();
 	$(window).scroll(function(event) {
@@ -93,33 +99,13 @@ $(function(){
 
 	// banner的弹出框
 	$(".banlfhaver").hide();
-	$(".banlfhave1").hover(function() {
-		$(".banlfhaver1").show();
-		$(".banlfhave1").addClass('addborder');
+	$(".banlfhaveopen").hover(function() {
+		$(this).children('').show();
+		$(this).css('border', '1px solid #e9e9e9');
+		$(this).children('.banlfhd').css('z-index', '6');
 	}, function() {
-		$(".banlfhaver1").hide();
-		$(".banlfhave1").removeClass('addborder');
+		$(".banlfhaver").hide();
+		$(this).css('border', '1px solid #fff');
+		$(this).children('.banlfhd').css('z-index', '');
 	});
-	$(".banlfhave2").hover(function() {
-		$(".banlfhaver2").show();
-		$(".banlfhave2").addClass('addborder');
-	}, function() {
-		$(".banlfhaver2").hide();
-		$(".banlfhave2").removeClass('addborder');
-	});
-	$(".banlfhave3").hover(function() {
-		$(".banlfhaver3").show();
-		$(".banlfhave3").addClass('addborder');
-	}, function() {
-		$(".banlfhaver3").hide();
-		$(".banlfhave3").removeClass('addborder');
-	});
-	$(".banlfhave4").hover(function() {
-		$(".banlfhaver4").show();
-		$(".banlfhave4").addClass('addborder');
-	}, function() {
-		$(".banlfhaver4").hide();
-		$(".banlfhave4").removeClass('addborder');
-	});
-
 })

@@ -1,7 +1,12 @@
 /* 轮播图 */
 .banner{
 	position: relative;
+	cursor: pointer;
 	height: 435px;
+}
+.bannerbg{
+	overflow: hidden;
+	height: 440px;
 }
 .bannerbgul{
 	position: relative;
@@ -59,38 +64,30 @@
 	top: 0px;
 }
 /* 轮播图左边导航栏 */
-.banlf{
-	padding-top: 12px;
-	padding-left: 15px;
-	color: #ff6a00;
-	border: 1px solid #fff;
-}
-.banlf hr{
-	position: relative;
-	left: -10px;
-	width: 200px;
-	border: none;
-	height: 1px;
-	top: 7px;
-	background-color: #e9e9e9;
-}
 .banL .banlfb{
 	font-weight: bold;
+}
+.banlf{
+	padding-top: 10px;
+}
+.banlf ul{
+	width: 200px;
+	overflow: hidden;
+	margin: 0px 15px;
+	padding-bottom: 10px ;
+	border-bottom: 1px solid #e9e9e9;
+}
+.banlf ul li{
+	float: left;
+	margin-top: 5px;
+	padding-right: 14px;
 }
 .banlf>a{
 	font-weight: bold; 
 	color: #ff6a00;
 	padding-right: 5px;
+	margin: 0px 15px;
 	font-size: 14px;
-}
-.banlf ul{
-	width: 200px;
-	overflow: hidden;
-	border-bottom: 1px solid #e9e9e9;
-	padding-bottom: 10px;
-}
-.banlfhave{
-	position: relative;
 }
 .banlfhave::before{
 	content: '';
@@ -101,39 +98,40 @@
 	background-position: -301px -45px;
 	transform: scale(0.5);
 	position: absolute;
-	top: 4px;
-	right: 14px;
+	top: 2px;
+	right: 10px;
 }
-.banlf ul li{
-	float: left;
-	margin-top: 5px;
-	padding-right: 14px;
+.banlfhave ul{
+	overflow: hidden;
+	padding-bottom: 3px;
+	margin-right: 11px;
 }
 /* 弹出框 */
-.banlfhd{
-	position: relative;
-	z-index: 6;
-	padding-top: 12px;
-	padding-left: 15px;
-	color: #ff6a00;
+.banlfhaveopen{
+	padding-top: 0px;
 	border: 1px solid #fff;
+}
+.banlfhd{
+	padding-top: 10px;
+	position: relative;
+	z-index: 4;
+	border: 1px solid #fff;
+	background-color: #fff;
 	overflow: hidden;
 }
 .banlfhd>a{
 	font-size: 14px;
 	color: #ff6a00;
+	margin: 0px 15px;
 	font-weight: bold;
+}
+.banlfhd ul{
+	padding-bottom: 10px;
 }
 .banlfhd li{
 	float: left;
 	margin-top: 5px;
 	padding-right: 14px;
-}
-.addborder{
-	border: 1px solid #ccc;
-	border-right: none;
-	background-color: #fff;
-	z-index: 6;
 }
 .banlfhaver{
 	width: 715px;
@@ -147,9 +145,6 @@
 	z-index: 5;
 	padding-left: 5px;
 	box-shadow: 0px 0px 5px 1px #ccc;
-}
-.banlfhaver1{
-	top: -194px;
 }
 .banlfhaver div{
 	width: 700px;
@@ -176,6 +171,10 @@
 	font-weight: bolder;
 	color: #77746f;
 	line-height: 20px;
+}
+.nonebottom ul{
+	width: 660px;
+	border-bottom: none;
 }
 
 
